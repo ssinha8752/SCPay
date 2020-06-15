@@ -7,9 +7,7 @@ import Footer from './components/Footer';
 const App=()=>{
   return (
     <div>
-    <Header/>
-    <h1>
-    Welcome to SC PAY</h1>
+      <Header/>
     <Login/>
     <Footer/>
     </div>
