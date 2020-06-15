@@ -3,7 +3,6 @@ import React from 'react';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 
-
 const Login = () => {
   const onFinish = values => {
     console.log('Received values of form: ', values);
@@ -11,28 +10,17 @@ const Login = () => {
 
   return (
       <div>
-      <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
-                <h1 class="masthead-heading text-uppercase mb-0">Login / Register</h1>
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <p class="masthead-subheading font-weight-light mb-0">Better Together - Never Settle - Do the right thing</p>
-            </div>
-        </header>
-        <h1>
-        Login Here</h1>
-    <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-    >
+        <div class="cover">
+            <div class="container d-flex align-items-right flex-column">
+              <div class="login">
+          <Form
+              name="normal_login"
+              className="login-form"
+              initialValues={{
+              remember: true,
+              }}
+              onFinish={onFinish}
+          >
       <Form.Item
         name="username"
         rules={[
@@ -73,9 +61,12 @@ const Login = () => {
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
-        Or <a href="">register now!</a>
+        Or <a href="">KYC not done yet?</a>
       </Form.Item>
     </Form>
+              </div>
+              </div>
+           </div> 
     </div>
   );
 };
