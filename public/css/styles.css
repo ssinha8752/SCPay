@@ -466,8 +466,9 @@ mark,
 
 .blockquote-footer {
   display: block;
+  max-width: 100px;
   font-size: 80%;
-  color: #6c757d;
+  color: #6c757d
 }
 .blockquote-footer::before {
   content: "— ";
@@ -10244,14 +10245,12 @@ h3 {
 .floating-label-form-group-with-focus label {
   color: #1abc9c;
 }
-
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
 }
-
 .footer {
-  padding-top: 0rem;
-    padding-bottom: 9rem;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
     background-color: #7abcff;
     color: #fff;
 }

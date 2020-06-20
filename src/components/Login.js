@@ -3,6 +3,19 @@ import React from 'react';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 
+function validate()
+{
+    if(   document.getElementById("text1").value === "1"
+       && document.getElementById("text2").value === "2" )
+    {
+        alert("validation succeeded");
+    }
+    else
+    {
+        alert( "validation failed" );
+    }
+}
+
 const Login = () => {
   const onFinish = values => {
     console.log('Received values of form: ', values);
@@ -23,6 +36,7 @@ const Login = () => {
           >
       <Form.Item
         name="username"
+        id="text1"
         rules={[
           {
             required: true,
@@ -34,6 +48,7 @@ const Login = () => {
       </Form.Item>
       <Form.Item
         name="password"
+        id="text2"
         rules={[
           {
             required: true,
@@ -58,10 +73,11 @@ const Login = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button type="primary" htmlType="submit" className="login-form-button" onclick={validate}>
           Log in
         </Button>
-        Or <a href="">KYC not done yet?</a>
+        <div></div>
+        <div></div><a href="https://www.google.com/">KYC not done yet?</a>
       </Form.Item>
     </Form>
               </div>
