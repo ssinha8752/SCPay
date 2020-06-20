@@ -13,20 +13,22 @@ code {
     monospace;
 }
 .cover{
-  background-image: url(../src/img.jpg);
+  background-image: url(../src/img4.jpg);
   min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .login{
   width: 323px;
   padding-top: 130px;
-  padding-left: 29px;
+  padding-left: 0px;
   padding-right: 22px;
   position: relative;
   margin-right: 40px;
   margin-left: 674px;
+  padding-top: 250px;
 }
 .p{
   text-align: left;
