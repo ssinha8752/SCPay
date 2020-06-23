@@ -15,10 +15,11 @@ function HandleMenuClick(e) {
 const Dashboard=()=>{
     return (
         <Layout>
-    <Header className="header">
+    <Header>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key="1">LogOut</Menu.Item>
+        <Menu.Item key="1">
+        <a target="_blank" rel="noopener noreferrer" href='http://localhost:3000/login'>LogOut</a></Menu.Item>
         <Menu.Item key="2">nav 2</Menu.Item>
         <Menu.Item key="3">nav 3</Menu.Item>
         <Menu.Item key="4">Welcome To SCPay</Menu.Item>

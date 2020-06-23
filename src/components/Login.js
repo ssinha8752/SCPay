@@ -73,7 +73,7 @@ const Login = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button" onclick={validate}>
+        <Button type="primary" htmlType="submit" className="login-form-button" onClick={event =>  window.location.href='http://localhost:3000/welcome'}>
           Log in
         </Button>
         <div></div>
